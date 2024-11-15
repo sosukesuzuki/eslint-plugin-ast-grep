@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "target": "esnext",
+    "module": "NodeNext",
+    "resolveJsonModule": true,
+    "strict": true
+  },
+  "include": ["src/**/*.js"]
+}

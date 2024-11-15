@@ -1,0 +1,32 @@
+{
+  "type": "module",
+  "name": "eslint-plugin-ast-grep",
+  "version": "1.0.0",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "scripts": {
+    "format": "prettier -W src",
+    "lint": "tsc --noEmit -p ./jsconfig.json",
+    "test": "node ./tests/rules/no-restricted-syntax.js"
+  },
+  "keywords": [
+    "eslint",
+    "eslint-plugin",
+    "ast-grep"
+  ],
+  "author": {
+    "name": "Sosuke Suzuki",
+    "email": "aosukeke@gmail.com"
+  },
+  "license": "MIT",
+  "description": "ESLint plugin with ast-grep",
+  "devDependencies": {
+    "prettier": "^3.3.3",
+    "typescript": "^5.6.3"
+  },
+  "peerDependencies": {
+    "eslint": ">=9.0.0",
+    "@ast-grep/napi": ">=0.30.0"
+  }
+}
