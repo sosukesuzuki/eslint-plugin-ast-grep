@@ -70,11 +70,13 @@ const noRestrictedSyntaxRule = {
               .root()
               .findAll(patternNode)
               .forEach((match) => {
-                const loc = match.range();
+                const range = match.range();
+                range.start.line += 1;
+                range.end.line += 1;
                 context.report({
                   loc: {
-                    start: loc.start,
-                    end: loc.end,
+                    start: range.start,
+                    end: range.end,
                   },
                   messageId: "restrictedSyntax",
                   data: {
