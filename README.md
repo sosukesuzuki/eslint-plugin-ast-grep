@@ -39,7 +39,7 @@ Alternatively, the rule also accepts objects, where the pattern and an optional 
     "no-restricted-syntax": [
       "error",
       {
-        "selector": "console.log",
+        "pattern": "console.log",
         "message": "console.log is not allowed."
       }
     ]
